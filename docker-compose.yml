@@ -1,0 +1,16 @@
+---
+version: "3.8"
+services:
+  app1:
+    image: akashbehera787/movie:latest
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
+  application2:
+    image:  akashbehera787/train:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+...    
